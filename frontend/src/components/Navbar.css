@@ -1,17 +1,16 @@
 .topnav {
-    display: flex;
-    overflow: hidden;
-    /* background-color: #333; */
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    gap: 50px;
-    margin-left: 170px;
-    margin-top: 20px;
-  
-    
-  }
+  display: flex;
+  overflow: hidden;
+  /* background-color: #333; */
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  /* margin-left: 170px; */
+  margin-top: 20px;
+  /* width: 100%; */
+}
   
   
   
@@ -27,6 +26,8 @@
     font-size: 1.6em;
   
   }
+
+
   
   .topnav a:hover {
     background-color: #ddd;
@@ -39,6 +40,7 @@
     font-size: 3em;
     color: white;
     margin-left: 50px;
+    width:30%;
   }
 
   .leftlinks{
@@ -48,5 +50,22 @@
     margin-left: 190px;
     gap: 50px;
     margin-top: 20px;
+    z-index: 4;
   }
   
+  .logonav{
+    /* width:40%; */
+    z-index: 4;
+  }
+
+  .navcontainer{    
+    display: flex;
+    /* position: absolute; */
+    margin: 20px;
+    z-index: 2;
+    /* overflow-x: hidden; */
+    /* align-items: center; */
+    justify-content: space-around;
+    /* align-content: center; */
+    /* gap: 30px; */
+  }

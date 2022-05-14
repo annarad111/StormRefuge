@@ -5,13 +5,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Games from '../pages/games/Games';
+import { Link } from "react-router-dom";
 
 export default function MediaCard(game) {
-
-  // async function goToStore(){
-  //   let website = game.game.stores
-  // }
 
   return (
     <Card sx={{ maxWidth: 345 }} key={game.game.name}>
@@ -28,23 +24,21 @@ export default function MediaCard(game) {
         </Typography>
         
         { game.game.genres.map((g) => (
-         <Typography variant="body2" color="text.secondary">
+         <Typography variant="body2" color="text.secondary" key={g.id}>
              {g.name}
         </Typography>
 
         ))}
-                { game.game.stores.map((g) => (
-         <Typography variant="body2" color="text.secondary">
-             {g.name}
-        </Typography>
 
-        ))}
         
       </CardContent>
       <CardActions>
-        <Button size="small">Access website</Button>
-        <Button size="small">Learn More</Button>
+      <Button component={Link} to={`/games/${game.game.slug}`} size="small">Learn more</Button>
       </CardActions>
+      <div className='addanddelete'>
+      <Button variant="contained" >Add to list</Button>
+      <Button variant="contained">Delete from list</Button>
+      </div>
     </Card>
   );
 }

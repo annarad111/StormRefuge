@@ -35,3 +35,8 @@
     width: 100%;
 }
 
+.addanddelete{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

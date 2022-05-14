@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+.detailedimg{
+    width: 60%;
+    border-radius: 20px;
+}
+
+.detailedcontainer{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.description{
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.gametitle{
+    margin-top: 200px;
+    margin-bottom:100px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.gametitles{
+    display: hidden;
+}
+
+.listdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.css-1k9ek97{
+    border-radius: 20px;
+}
