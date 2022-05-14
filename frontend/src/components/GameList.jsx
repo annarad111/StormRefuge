@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import './GameList.css';
+import BasicPagination from './Pagination';
+import cover from '../images/cover.jpg';
 
 
 export default function GameList(){
@@ -32,12 +34,16 @@ console.log(res)
       
     return(
         <>
-        <h1>GameList</h1>
+        <div className='containerimg'>
+        <img src={cover} alt="All games" className='coverimg'/>
+        </div>
         <div className='gamelist'>
         { res.map((r) => (
          <Card game={r} />
         ))}
+        <BasicPagination/>
     </div>
+
         </>
 
     )

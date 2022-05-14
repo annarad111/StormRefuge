@@ -8,14 +8,15 @@ import Typography from '@mui/material/Typography';
 import Games from '../pages/games/Games';
 
 export default function MediaCard(game) {
-console.log(game.game.name)
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} key={game.game.name}>
       <CardMedia
         component="img"
         height="140"
         image={game.game.background_image}
         alt="green iguana"
+        
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -30,7 +31,7 @@ console.log(game.game.name)
         
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
+        <Button size="small">Access website</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

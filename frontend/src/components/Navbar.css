@@ -38,13 +38,14 @@
   .logon{
     font-size: 3em;
     color: white;
+    margin-left: 50px;
   }
 
   .leftlinks{
     display: flex;
     color: white;
     font-size: 1.5em;
-    margin-left: 120px;
+    margin-left: 190px;
     gap: 50px;
     margin-top: 20px;
   }

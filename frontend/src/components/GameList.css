@@ -17,3 +17,19 @@
 .css-1ri6ub7-MuiPaper-root-MuiCard-root {
     width: 300px;
 }
+
+
+
+.css-1p5q5e5-MuiStack-root {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.coverimg{
+    width: inherit;
+}
+
+.containerimg{
+    align-items: center;
+    width: 100%;
+}
