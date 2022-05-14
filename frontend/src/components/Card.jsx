@@ -9,11 +9,15 @@ import Games from '../pages/games/Games';
 
 export default function MediaCard(game) {
 
+  // async function goToStore(){
+  //   let website = game.game.stores
+  // }
+
   return (
     <Card sx={{ maxWidth: 345 }} key={game.game.name}>
       <CardMedia
         component="img"
-        height="140"
+        height="250"
         image={game.game.background_image}
         alt="green iguana"
         
@@ -27,6 +31,13 @@ export default function MediaCard(game) {
          <Typography variant="body2" color="text.secondary">
              {g.name}
         </Typography>
+
+        ))}
+                { game.game.stores.map((g) => (
+         <Typography variant="body2" color="text.secondary">
+             {g.name}
+        </Typography>
+
         ))}
         
       </CardContent>

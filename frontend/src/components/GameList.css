@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 40px;
+    margin-bottom: 70px;
 }
 
 .css-1t6e9jv-MuiCardActions-root {
@@ -33,3 +34,4 @@
     align-items: center;
     width: 100%;
 }
+
