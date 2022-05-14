@@ -1,0 +1,145 @@
+a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+    /* width:max-content; */
+    /* overflow-x: hidden; */
+  }
+  
+  .full-page-controls button{
+     text-indent: -9000px;
+     text-transform: capitalize;
+     border-radius: 50%;
+     height: 13px;
+     color: rgb(0, 0, 0);
+     border: none;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     margin: 4px 2px;
+     z-index:10;
+  }
+  
+  .full-page-controls{
+      left: 55%;
+      padding-top: 10px;
+      position: fixed;
+      display: grid;
+      top: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      z-index: 100;
+      overflow: hidden;
+  }
+  
+  .homepagevideo{
+    height: 800px;
+    width: 100%;
+    margin-top: 50px;
+    left:10%;
+   }
+  
+  .videodiv{
+    display: flex;
+  
+  }
+  
+  .container {
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    z-index: 2;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap:30px;
+    max-width: 100%;
+  
+  
+  }
+
+  .videoback{
+    z-index:1;
+    width:40rem;
+    text-align:center;
+    text-shadow:1px 1px 1px #000;
+    color :#fefefe;
+    overflow-x: hidden;
+    margin:0;
+  }
+  
+    
+    
+  .titleonvideo{
+    font-size:2rem;
+    font-weight:800;
+    overflow-x: hidden;
+    margin:0;
+  }
+  
+  .titlelogo{
+    font-size: 4rem;
+  }
+    
+  
+    
+  .buttononvid{
+    cursor:pointer;
+    padding:0.5rem;
+    border:1px solid transparent;
+    border-radius:0.25rem;
+    color:#fefefe;
+    background-color:#e55;
+    font-weight:600;
+    transition: .2s ease;
+    margin-top: 50px;
+    font-size: 1.3em;
+  }
+    
+    
+  .buttononvid:hover{
+      background-color:darken(#e55, 10%);
+    }
+      
+    
+  .overlay{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    margin:0;
+  
+  }
+
+  .video2{
+    position:absolute;
+    top :0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    overflow-x: hidden;
+    margin:0;
+  }
+
+  .sec{
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    width :100%;
+    height :100vh;
+    overflow :hidden;
+    margin:0;
+    
+  }
+  

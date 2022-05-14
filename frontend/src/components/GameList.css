@@ -1,0 +1,19 @@
+.gamelist{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    width: 300px;
+}
