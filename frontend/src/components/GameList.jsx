@@ -44,9 +44,13 @@ export default function GameList(){
       
       return res.length ? (
         <>
+        <div className='gradient'>
+          <p className='spacegradient'>Am 3 lei</p>
+        </div>
         <div className='containerimg'>
         <img src={cover} alt="All games" className='coverimg'/>
         </div>
+
         <div className='gamelist'>
         { res.map((r, index) => (
          <Card game={r} key={r[index]} />

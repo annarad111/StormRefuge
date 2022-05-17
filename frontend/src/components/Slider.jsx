@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FullPage, Slide } from 'react-full-page';
 import lol from '../videos/lol.mp4';
 import './Slider.css'
+import sylvanas from '../images/sylvanas.png';
 
 
 const controlsProps = {
@@ -66,7 +67,8 @@ export default function FullPageExample() {
           </Slide>
           <Slide className='slide2'>
             <div className='slide2'>
-
+            <img src={sylvanas} alt="All games" className='sylvanas'/>
+            <h1 className='sylvanastitle'>Find out everything about the games you love!</h1>
             </div>
           </Slide>  
       </FullPage>

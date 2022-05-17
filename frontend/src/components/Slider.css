@@ -143,3 +143,21 @@ a {
     
   }
   
+  .sylvanas{
+    height: 700px;
+    margin-left: 100px;
+  }
+
+  .sylvanastitle{
+    color: white;
+  }
+  .slide2{
+    display: flex;
+  }
+
+  .css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    background-color: rgb(0 0 0 / 87%) !important;
+    color: white !important;
+  }
+
+  

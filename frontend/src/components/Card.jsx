@@ -6,6 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
+import IconButton from '@mui/material/IconButton';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export default function MediaCard(game) {
 
@@ -36,8 +38,9 @@ export default function MediaCard(game) {
       <Button component={Link} to={`/games/${game.game.slug}`} size="small">Learn more</Button>
       </CardActions>
       <div className='addanddelete'>
-      <Button variant="contained" >Add to list</Button>
-      <Button variant="contained">Delete from list</Button>
+      <IconButton color="primary" aria-label="add to shopping cart">
+        <AddShoppingCartIcon />
+      </IconButton>
       </div>
     </Card>
   );

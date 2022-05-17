@@ -6,6 +6,7 @@
     flex-direction: row;
     gap: 40px;
     margin-bottom: 70px;
+    margin-top: 100px;
 }
 
 .css-1t6e9jv-MuiCardActions-root {
@@ -22,8 +23,8 @@
 
 
 .css-1p5q5e5-MuiStack-root {
-    background-color: white;
-    border-radius: 20px;
+    background-color: #333;
+    /* border-radius: 20px; */
 }
 
 .coverimg{
@@ -40,3 +41,62 @@
     flex-direction: column;
     gap: 10px;
 }
+
+
+.css-r40f8v-MuiTypography-root{
+    color: white !important;
+}
+
+.pagination > li > span{
+    color: white !important;
+}
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root{
+    color: white !important;
+}
+
+.css-ahj2mt-MuiTypography-root{
+    color: white !important;
+}
+
+.css-1p5q5e5-MuiStack-root {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    overflow: hidden;
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.addanddelete:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+
+.gradient{
+    margin: 0;
+    /* width: 300px; */
+    background-image:linear-gradient(360deg, black, transparent);
+}
+
+.spacegradient{
+    margin: 0;
+}
+
