@@ -100,3 +100,8 @@
     margin: 0;
 }
 
+.navigationtop{
+    position: -webkit-sticky !important; /* Safari */
+    position: sticky !important;
+    top: 0 !important;
+}

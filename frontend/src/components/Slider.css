@@ -144,7 +144,8 @@ a {
   }
   
   .sylvanas{
-    height: 700px;
+    margin-top: 0;
+    height: 520px;
     margin-left: 100px;
   }
 
@@ -159,5 +160,7 @@ a {
     background-color: rgb(0 0 0 / 87%) !important;
     color: white !important;
   }
+
+ 
 
   

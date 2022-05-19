@@ -7,6 +7,8 @@ import Typography from '@mui/material/Typography';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import LoadingComponent from './LoadingComponent';
+import NavigationIcon from '@mui/icons-material/Navigation';
+import Fab from '@mui/material/Fab';
 
 
 export default function GameList(){
@@ -45,7 +47,7 @@ export default function GameList(){
       return res.length ? (
         <>
         <div className='gradient'>
-          <p className='spacegradient'>Am 3 lei</p>
+          <p className='spacegradient'></p>
         </div>
         <div className='containerimg'>
         <img src={cover} alt="All games" className='coverimg'/>
@@ -55,15 +57,20 @@ export default function GameList(){
         { res.map((r, index) => (
          <Card game={r} key={r[index]} />
         ))}
-        
+
     </div>
+    <Fab variant="extended" className='navigationtop'>
+        <NavigationIcon sx={{ mr: 1 }} />
+        Navigate
+      </Fab>
     <div className='pagination'>
     <Stack spacing={2}>
       <Typography>Page: {page}</Typography>
+
       <Pagination count={(count/20).toFixed()} page={page} onChange={handleChange} />
     </Stack>
     </div>
         </>):(
-          <LoadingComponent message='Loading products...' />
+          <LoadingComponent message='Loading ...' />
         )
 }
