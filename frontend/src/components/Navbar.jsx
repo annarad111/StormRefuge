@@ -25,10 +25,10 @@ export default function Navbar(){
                 </Link>
                 </div>
                 <div className="leftlinks">
-                <Link to="/login">
+                <Link to="/login" className="login">
                     Login
                 </Link>
-                <Link to="/register">
+                <Link to="/register" className="register">
                     Register
                 </Link>
                 </div>
