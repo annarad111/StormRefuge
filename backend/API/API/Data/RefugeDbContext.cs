@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using API;
+using API.Entities;
 
 namespace API.Data
 {
-    public class RefugeDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
+    public class RefugeDbContext : IdentityDbContext<User>
     {
         public RefugeDbContext(DbContextOptions<RefugeDbContext> options)
     : base(options)
@@ -18,8 +19,9 @@ namespace API.Data
 
             builder.Entity<IdentityRole>()
                 .HasData(
-                new IdentityRole { Name = "Member", NormalizedName = "Member" },
-                new IdentityRole { Name = "Admin", NormalizedName = "Admin" });
+                    new IdentityRole { Name = "Member", NormalizedName = "MEMBER" },
+                    new IdentityRole { Name = "Admin", NormalizedName = "ADMIN" }
+                );
         }
     }
 }
