@@ -28,19 +28,17 @@ const Demo = styled('div')(({ theme }) => ({
 
 export default function InteractiveList(props) {
 
-const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(2);
   const [dense, setDense] = React.useState(false);
   const [secondary, setSecondary] = React.useState(false);
-
-
 
 
   return (
     <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Text only
+          <Typography sx={{ mt: 4, mb: 2 }} variant="h4" component="div">
+            Description
           </Typography>
           <Demo>
             <List dense={dense}>
@@ -56,8 +54,8 @@ const [value, setValue] = React.useState(2);
           </Demo>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Icon with text
+          <Typography sx={{ mt: 4, mb: 2 }} variant="h4" component="div">
+            General Information
           </Typography>
           <Demo>
             <List dense={dense}>
@@ -94,62 +92,38 @@ const [value, setValue] = React.useState(2);
                       Website : {props.props.website}
                   </a>
               </ListItem>
-              <Demo>
-            <List dense={dense}>
-              {generate(
-                <ListItem
-                  secondaryAction={
-                    <IconButton edge="end" aria-label="delete">
-
-                    </IconButton>
-                  }
-                >
-                  <ListItemAvatar>
-                    <Avatar>
-
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText
-                    primary="Single-line item"
-                    secondary={secondary ? 'Secondary text' : null}
-                  />
-                </ListItem>,
-              )}
+              <ListItem>
+                  <Typography>
+                      Game series : {props.props.game_series_count}
+                  </Typography>
+              </ListItem>
+              <ListItem>
+                  <Typography>
+                      Average playtime : {props.props.playtime} hours
+                  </Typography>
+              </ListItem>
+              <ListItem>
+                  <Typography>
+                      Reddit description : "{props.props.reddit_description}"
+                  </Typography>
+              </ListItem>
+              <ListItem>
+                  <Typography>
+                      Twitch count : {props.props.twitch_count}
+                  </Typography>
+              </ListItem>
+              <ListItem>
+                  <Typography>
+                      Yotube count : {props.props.youtube_count}
+                  </Typography>
+              </ListItem>
+              <ListItem>
+                  <Typography>
+                      Reddit count : {props.props.reddit_count}
+                  </Typography>
+              </ListItem>
             </List>
           </Demo>
-            </List>
-          </Demo>
-        </Grid>
-      </Grid>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Avatar with text
-          </Typography>
-          <Demo>
-            <List dense={dense}>
-              {generate(
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText
-                    primary="Single-line item"
-                    secondary={secondary ? 'Secondary text' : null}
-                  />
-                </ListItem>,
-              )}
-
-
-            </List>
-          </Demo>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Avatar with text and icon
-          </Typography>
-
         </Grid>
       </Grid>
     </Box>

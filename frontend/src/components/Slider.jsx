@@ -62,7 +62,7 @@ export default function FullPageExample() {
             <div className="overlay"></div>
                 <video src={lol} autoPlay loop muted className='video2'></video>
                 <div className='videoback'>
-                    <h1 className='titlelogo'>Storm Refuge</h1>
+                    <h1 className='animate__animated animate__fadeIn animate__slower-7s titlelogo'>Storm Refuge</h1>
                     <h2 className='titleonvideo'>Helping gamers worldwide!</h2>
                     <button className='buttononvid'>
                 <a href='/games'>Learn more</a></button>

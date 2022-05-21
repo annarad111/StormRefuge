@@ -46,23 +46,25 @@ export default function GameList(){
       
       return res.length ? (
         <>
-        <div className='gradient'>
+        <div className='gradient' id="top">
           <p className='spacegradient'></p>
         </div>
         <div className='containerimg'>
         <img src={cover} alt="All games" className='coverimg'/>
         </div>
+        <div className='sticky'>
+    <Fab variant="extended" className='navigationtop'>
+        <a href='#topgames'><NavigationIcon sx={{ mr: 1 }} />Go Top</a>
+      </Fab>
+      </div>
 
-        <div className='gamelist'>
+        <div className='gamelist' id='topgames'>
         { res.map((r, index) => (
          <Card game={r} key={r[index]} />
         ))}
 
     </div>
-    <Fab variant="extended" className='navigationtop'>
-        <NavigationIcon sx={{ mr: 1 }} />
-        Navigate
-      </Fab>
+
     <div className='pagination'>
     <Stack spacing={2}>
       <Typography>Page: {page}</Typography>

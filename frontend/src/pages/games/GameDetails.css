@@ -3,6 +3,7 @@
 .detailedimg{
     width: 60%;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .detailedcontainer{
@@ -17,8 +18,8 @@
 }
 
 .gametitle{
-    margin-top: 200px;
-    margin-bottom:100px;
+    margin-top: 100px;
+    margin-bottom:50px;
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -37,4 +38,8 @@
 
 .css-1k9ek97{
     border-radius: 20px;
+}
+
+.css-ahj2mt-MuiTypography-root{
+    color: black !important;
 }

@@ -37,7 +37,6 @@ export default function GameDetails(){
 
       return !loading ? (
         <>
-        <p className='gametitles'>{res.name}</p>
         <div className='detailedcontainer'>
         <h1 className='gametitle'>{res.name}</h1>
             <div>
@@ -52,6 +51,6 @@ export default function GameDetails(){
         </div>
         </>
     ):(
-      <LoadingComponent message='Loading products...' />
+      <LoadingComponent message='Loading ...' />
     )
 }

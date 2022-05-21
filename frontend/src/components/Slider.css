@@ -148,7 +148,7 @@ a {
   .sylvanas{
     margin-top: 0;
     height: 520px;
-    margin-left: 100px;
+    margin-left: 180px;
   }
 
   .sylvanastitle{
@@ -177,7 +177,7 @@ a {
   font-family: 'Nunito', sans-serif;
    background-color: transparent;
   position: relative;
-  right: 20px;
+  right: 50px;
   bottom: 20px;
   border:none;
   box-shadow: none;

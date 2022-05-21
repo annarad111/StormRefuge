@@ -101,7 +101,17 @@
 }
 
 .navigationtop{
-    position: -webkit-sticky !important; /* Safari */
+
+position: absolute;
+/* right: 0 !important; */
+opacity: 0.7 !important;
+}
+
+.sticky{
+    z-index: 5;
     position: sticky !important;
     top: 0 !important;
+    right: 0 !important;
+    
+
 }

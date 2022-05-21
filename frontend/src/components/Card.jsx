@@ -31,6 +31,7 @@ export default function MediaCard(game) {
         </Typography>
 
         ))}
+        
 
         
       </CardContent>

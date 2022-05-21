@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './Login.css';
+import gta from '../../images/sanandreas.png'
 
 function Copyright(props) {
   return (
@@ -36,6 +37,9 @@ export default function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    if(data.get('username') === "" || data.get('password') === ""){
+      alert('All fields are required!');
+    }else{
     axios.post('https://localhost:5000/api/Account/login', {
       username: data.get('username'),
       password: data.get('password'),
@@ -45,16 +49,20 @@ export default function SignIn() {
         navigate('/');
       })
       .catch(function (error) {
+        alert('This account does not exist');
         console.log(error);
       });
     console.log({
       email: data.get('email'),
       password: data.get('password'),
     });
+  }
   };
 
   return (
     <ThemeProvider theme={theme}>
+      <div className='gtadiv'> 
+      <img src={gta} alt="All games" className='gta'/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -115,6 +123,7 @@ export default function SignIn() {
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
+      </div>
     </ThemeProvider>
   );
 }

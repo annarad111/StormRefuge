@@ -9,3 +9,21 @@
 .css-11lq3yg-MuiGrid-root{
     justify-content: center;
 }
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+    background-color: white;
+}
+
+.gtadiv{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.gta{
+    height: 600px;
+    margin-top: 28px;
+}
+
+.css-nzinn5-MuiContainer-root{
+    margin-right: 50px !important;
+}

@@ -4,6 +4,7 @@ body{
 
 .css-wb57ya-MuiFormControl-root-MuiTextField-root{
     background-color: white;
+    border-radius: 10px;
 
 }
 
@@ -13,4 +14,29 @@ body{
 
 .css-16g5rpk-MuiGrid-root{
     justify-content: center;
+}
+
+.css-16g5rpk-MuiGrid-root{
+    justify-content: center !important;
+}
+.css-ag7rrr-MuiTypography-root{
+    color: white;
+}
+
+.tyrandediv{
+    display: flex;
+}
+
+.css-nzinn5-MuiContainer-root{
+    margin-left: 200px !important;
+}
+
+.tyrande{
+    margin-top: 0;
+    height: 620px;
+    margin-left: 200px;
+}
+
+.passwordreq{
+    color: #1d86cf !important;
 }

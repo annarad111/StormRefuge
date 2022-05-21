@@ -23,6 +23,9 @@ export default function Navbar(){
                 <Link to="/games">
                     Games
                 </Link>
+                <Link to="/contact">
+                    Contact
+                </Link>
                 </div>
                 <div className="leftlinks">
                 <Link to="/login" className="login">
