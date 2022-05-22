@@ -22,6 +22,49 @@ namespace API.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("API.Entities.Game", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("background_image")
+                        .HasColumnType("text");
+
+                    b.Property<string>("description")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("game_series")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("metacritic")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("name")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("playtime")
+                        .HasColumnType("integer");
+
+                    b.Property<float?>("rating")
+                        .HasColumnType("real");
+
+                    b.Property<int?>("ratings_count")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("released")
+                        .HasColumnType("text");
+
+                    b.Property<string>("website")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Games");
+                });
+
             modelBuilder.Entity("API.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -114,15 +157,15 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d5d273d4-1b85-4a6b-ab46-95139c8b4f9f",
-                            ConcurrencyStamp = "99185b27-da82-48aa-b847-18be719ff477",
+                            Id = "e2d48b2e-4b33-4688-91f6-301f348a5bdd",
+                            ConcurrencyStamp = "263a635b-1ff4-44d9-a63f-cecad8514144",
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
                         new
                         {
-                            Id = "7814c28b-5300-4d92-8661-2694bd46e95d",
-                            ConcurrencyStamp = "8c7a6277-8221-4644-a86a-8d900aded52c",
+                            Id = "35a77363-2f1a-4777-b4be-63873424c65e",
+                            ConcurrencyStamp = "1383d0b6-5446-438b-aba0-126fe141a4b9",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

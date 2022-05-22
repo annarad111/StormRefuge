@@ -1,5 +1,5 @@
 import Slider from '../components/Slider';
-import GameList from '../components/GameList';
+import GameList from '../components/SeedList';
 
 
 export default function Home(){

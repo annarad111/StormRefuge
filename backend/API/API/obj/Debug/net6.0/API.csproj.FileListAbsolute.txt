@@ -25,11 +25,7 @@ C:\Users\Ana\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\API.pdb
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\ref\API.dll
-C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\EntityFramework.SqlServer.dll
-C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\EntityFramework.dll
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\Humanizer.dll
-C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -145,3 +141,5 @@ C:\Users\User\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\refint\API.dl
 C:\Users\User\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\API.pdb
 C:\Users\User\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\User\Desktop\StormRefuge\backend\API\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Ana\Desktop\StormRefuge\backend\API\API\bin\Debug\net6.0\PagedList.dll

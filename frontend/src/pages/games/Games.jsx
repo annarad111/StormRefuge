@@ -1,5 +1,5 @@
-import GameList from "../../components/GameList";
-import './Games.css';
+import GameList from "../../components/SeedList";
+import './Seeder.css';
 
 export default function Games(){
     return(
