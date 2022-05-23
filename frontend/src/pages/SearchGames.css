@@ -1,0 +1,14 @@
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+}

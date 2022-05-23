@@ -114,26 +114,10 @@ namespace API.Controllers
         }
 
         [HttpGet("allgames")]
-        public async Task<ActionResult<List<Game>>> GetProducts(int? page)
+        public async Task<ActionResult<List<Game>>> GetProducts(int page)
         {
-                var size = new List<Game>();
-                if(page == 0 || page == null || page == 1)
-            {
-                var firstPage = _context.Games
-                .OrderBy(b => b.Id)
-                .Take(10);
-                size = firstPage.ToList();
-                var lastId = size[size.Count() - 1].Id;
-
-            }
-
-                var nextPage = _context.Games
-                .OrderBy(b => b.Id)
-                .Where(b => b.Id > lastId)
-                .Take(10);
-
-
-            return await nextPage.ToListAsync();
+            var pageSize = 10;
+            return await _context.Games.Skip(page * pageSize).OrderBy(b => b.Id).Take(pageSize).ToListAsync();
         }
 
     }

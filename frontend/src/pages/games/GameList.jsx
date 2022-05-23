@@ -1,12 +1,12 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import Card from '../components/Card';
+import Card from '../../components/Card';
 import './GameList.css';
-import cover from '../images/cover.jpg';
+import cover from '../../images/cover.jpg';
 import Typography from '@mui/material/Typography';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import LoadingComponent from './LoadingComponent';
+import LoadingComponent from '../../components/LoadingComponent';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import Fab from '@mui/material/Fab';
 

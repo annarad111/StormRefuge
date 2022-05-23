@@ -1,16 +1,14 @@
-import * as React from 'react';
+import React, {  useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
+import axios from 'axios';
 
 
 
@@ -31,6 +29,35 @@ export default function InteractiveList(props) {
   const [value, setValue] = React.useState(2);
   const [dense, setDense] = React.useState(false);
   const [secondary, setSecondary] = React.useState(false);
+  
+  async function postData(){
+    console.log(props)
+    await axios.post('https://localhost:5000/api/Data/addnewgame', {
+            id: props.props.id,
+            background_image: props.props.background_image,
+            playtime: props.props.playtime,
+            // // genre: element.genre,
+            metacritic: props.props.metacritic,
+            // // platforms: element.platforms,
+            rating: props.props.rating,
+            ratings_count: props.props.ratings_count,
+            released: props.props.released,
+            // // short_screenshots: element.short_screenshots,
+            name: props.props.name,
+            // // stores: element.stores,
+            // // tags: element.tags,
+            description: props.props.description,
+            // // developers: element.developers,
+            game_series: 2,
+            website: props.props.website
+            })
+  }
+
+          useEffect(() => {
+            postData();
+           },[]);
+  
+
 
 
   return (

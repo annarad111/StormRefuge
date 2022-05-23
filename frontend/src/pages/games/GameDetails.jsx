@@ -17,7 +17,7 @@ export default function GameDetails(){
     async function fetchData(StormRefuge) {
 
       await axios
-        .get("https://api.rawg.io/api/games/" + id +"?key=f5bc44ee0df541dbb7209a3fc7bc8e70&/")
+        .get("https://api.rawg.io/api/games/" + id +"?key=d7141a844db24059b91c67a8277b3695&/")
         .then((res) => {
           if (res && res.data) {
             setRes(res.data);

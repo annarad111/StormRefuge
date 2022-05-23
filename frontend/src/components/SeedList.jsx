@@ -15,7 +15,6 @@ export default function SeedList(){
     let [res, setRes] = useState([]);
     let [count, setCount] = useState(1);
     let [page, setPage] = useState(1);
-    let [details, setDetails] = useState([]);
     let dataArr = [];
 
 
@@ -27,14 +26,12 @@ export default function SeedList(){
 
     async function fetchData(pageCount) {
       setRes([])
-      console.log(pageCount)
         await axios.get(`https://api.rawg.io/api/games?key=d7141a844db24059b91c67a8277b3695&page=${pageCount}`)
         .then(async (response) =>{
           console.log(response.data)
           let req = response.data
           setCount(req.count);
           setRes(req.results);
-          console.log(req.results);
           
           req.results.forEach(async (id) =>{
             console.log(id.id)
@@ -42,7 +39,6 @@ export default function SeedList(){
           .get("https://api.rawg.io/api/games/" + id.id +"?key=d7141a844db24059b91c67a8277b3695&/")
           .then(async (res) => {
               dataArr.push(res.data)
-              console.log(dataArr);
               seedData();
             })
           
@@ -50,13 +46,11 @@ export default function SeedList(){
           
         })
       }
-      
 
 
-      useEffect( () => {
-        
+      useEffect(() => {
        fetchData(1);
-        
+
       },[]);
 
       async function seedData(){

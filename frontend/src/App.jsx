@@ -4,11 +4,11 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from '../src/pages/Home';
 import About from '../src/pages/About';
 import Navbar from '../src/components/Navbar';
-import Games from './pages/games/Seeder';
+import Games from '../src/pages/games/Games';
 import GameDetails from './pages/games/GameDetails';
 import Login from './pages/account/Login';
 import Register from './pages/account/Register';
-import Contact from './pages/Contact';
+import SearchGames from './pages/SearchGames';
 import Seeder from './pages/games/Seeder';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="games/:slug" element={<GameDetails />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route path="searchgames" element={<SearchGames />} />
       </Routes>
     </div>
     </>

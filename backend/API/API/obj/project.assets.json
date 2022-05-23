@@ -2362,19 +2362,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ana\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ana\\Desktop\\StormRefuge\\backend\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\StormRefuge\\backend\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Ana\\Desktop\\StormRefuge\\backend\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ana\\Desktop\\StormRefuge\\backend\\API\\API\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\StormRefuge\\backend\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\StormRefuge\\backend\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2461,7 +2461,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },
