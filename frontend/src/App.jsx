@@ -10,6 +10,7 @@ import Login from './pages/account/Login';
 import Register from './pages/account/Register';
 import SearchGames from './pages/SearchGames';
 import Seeder from './pages/games/Seeder';
+import Profile from './pages/profile/Profile';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="searchgames" element={<SearchGames />} />
+        <Route path="profile" element={<Profile />} />
       </Routes>
     </div>
     </>

@@ -27,7 +27,7 @@ export default function GameList(){
       console.log(pageCount)
         const options = {
             method: 'GET',
-            url: ``,
+            url: `https://api.rawg.io/api/games?key=d7141a844db24059b91c67a8277b3695&page=${pageCount}`,
             data: ""
           };
         let response = await axios(

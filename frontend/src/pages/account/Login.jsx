@@ -46,6 +46,7 @@ export default function SignIn() {
       })
       .then(function (response) {
         console.log(response);
+        localStorage.setItem('username', data.get('username'));
         navigate('/');
       })
       .catch(function (error) {
@@ -53,7 +54,7 @@ export default function SignIn() {
         console.log(error);
       });
     console.log({
-      email: data.get('email'),
+      email: data.get('username'),
       password: data.get('password'),
     });
   }

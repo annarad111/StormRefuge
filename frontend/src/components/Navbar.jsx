@@ -1,8 +1,22 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import './Navbar.css'
+import './Navbar.css';
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar(){
+    let navigate = useNavigate();
+    function getUser(){
+    const user = localStorage.getItem('username');
+    console.log(user);
+    }
+    
+    getUser();
+
+    function logOut(){
+        localStorage.removeItem('username');
+        navigate('/');
+    }
+
     return(
         <>
         <div className="bg-img">
@@ -27,7 +41,20 @@ export default function Navbar(){
                     Search Games
                 </Link>
                 </div>
+
+                {localStorage.getItem('username') ? (
+                    <div className="leftlinks">
+                    
+                    <Link to="/profile" className="login">
+                        Profile
+                    </Link>
+                    <button onClick={logOut} className="register">
+                        Logout
+                    </button>
+                    </div>
+                ):(
                 <div className="leftlinks">
+                    
                 <Link to="/login" className="login">
                     Login
                 </Link>
@@ -35,6 +62,7 @@ export default function Navbar(){
                     Register
                 </Link>
                 </div>
+                )}
             </div>
         </div>
         </>
