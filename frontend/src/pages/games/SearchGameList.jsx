@@ -1,4 +1,5 @@
 import Card from '../../components/Card'
+import './SearchGameList.css'
 
 export default function SearchGameList(game){
     console.log(game)
@@ -8,7 +9,6 @@ export default function SearchGameList(game){
     return(
 
         <>
-        <h1>Search List</h1>
         <div className='gamelist' id='topgames'>
         { game.game.map((r, index) => (
          <Card game={r} key={r[index]} />

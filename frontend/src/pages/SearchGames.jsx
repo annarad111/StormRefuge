@@ -37,9 +37,7 @@ export default function SearchGames(){
     return search.length? (
 
         <>
-        <h1>
-            Search Games
-        </h1>
+
         <div className='searchbar'>
         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3,width: 500,
                 maxWidth: '100%', }}>
@@ -57,9 +55,10 @@ export default function SearchGames(){
         </>
     ):(
         <>
-        <h1>
-            Search Games
-        </h1>
+        <p class="logo-1">
+            Search
+        </p>
+       
         <div className='searchbar'>
         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3,width: 500,
                 maxWidth: '100%', }}>
